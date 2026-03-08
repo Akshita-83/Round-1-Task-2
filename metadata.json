@@ -1,0 +1,5 @@
+{
+  "name": "Forensic Insight: Task 2 - CCTV & Log Integrity",
+  "description": "High-security forensic investigation dashboard for analyzing CCTV feeds and system logs to detect timeline inconsistencies.",
+  "requestFramePermissions": []
+}

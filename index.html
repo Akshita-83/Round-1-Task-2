@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case File #24-11 - Forensic Investigation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --paper: #dcd4c3;
+            --ink: #1a1a1a;
+            --accent: #75020f; /* Requested Crimson */
+            --secondary: #51080d; /* Requested Maroon */
+            --board: #19171b; /* Requested Charcoal */
+        }
+
+        body {
+            font-family: 'Courier Prime', monospace;
+            background-color: var(--board);
+            background-image: url('https://www.transparenttextures.com/patterns/dark-wood.png');
+            color: var(--paper);
+            overflow-x: hidden;
+        }
+
+        .typewriter {
+            font-family: 'Special Elite', cursive;
+        }
+
+        .paper-texture {
+            background-color: var(--paper);
+            background-image: url('https://www.transparenttextures.com/patterns/paper.png');
+            color: var(--ink);
+            box-shadow: 5px 5px 25px rgba(0,0,0,0.7);
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .polaroid {
+            background: white;
+            padding: 10px 10px 30px 10px;
+            box-shadow: 5px 8px 15px rgba(0,0,0,0.6);
+            transform: rotate(-1deg);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            z-index: 20;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.8);
+        }
+
+        .string-line {
+            position: relative;
+            height: 2px;
+            background: var(--accent);
+            box-shadow: 0 0 5px var(--accent);
+            opacity: 0.8;
+        }
+
+        .red-pen {
+            color: var(--accent);
+            font-family: 'Special Elite', cursive;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--board); }
+        ::-webkit-scrollbar-thumb { background: var(--accent); }
+
+        /* Film Grain Effect */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://grainy-gradients.vercel.app/noise.svg');
+            opacity: 0.04;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .folder-tab {
+            clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+            background: var(--paper);
+            padding: 4px 20px;
+            color: var(--ink);
+            font-weight: bold;
+            font-size: 0.75rem;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+        }
+
+        .corkboard-overlay {
+            background-image: url('https://www.transparenttextures.com/patterns/cork-board.png');
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
